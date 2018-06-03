@@ -3,7 +3,7 @@ require 'active_support/inflector'
 require 'pry'
 
 class InteractiveRecord
-  attr_accessor :id, :name, :grade
+  #attr_accessor :id, :name, :grade
   def self.table_name
     self.to_s.downcase.pluralize
   end
