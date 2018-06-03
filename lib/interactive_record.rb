@@ -21,7 +21,7 @@ class InteractiveRecord
   end
 
   def initialize(options={})
-    options.each do |id, property, value|
+    options.each do |property, value|
       self.send(id, "#{property}=", value)
     end
   end
